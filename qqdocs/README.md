@@ -1,6 +1,6 @@
 # 企鹅文档重放
 
-用到的工具: [mkcert](https://mkcert.org/), [caddy 服务器](https://caddyserver.com/).
+用到的工具: [mkcert](https://github.com/FiloSottile/mkcert), [caddy 服务器](https://github.com/caddyserver/caddy).
 
 需要信任 mkcert CA, 给 caddy 赋予 80、443 端口权限.
 
