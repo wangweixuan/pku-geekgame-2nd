@@ -1,0 +1,12 @@
+docs.qq.com {
+	tls docs.qq.com.pem docs.qq.com-key.pem
+	handle /dop-api/get/sheet {
+		rewrite * /challenge.json
+		file_server
+	}
+	reverse_proxy https://220.194.116.39 {
+		transport http {
+			tls_insecure_skip_verify
+		}
+	}
+}
